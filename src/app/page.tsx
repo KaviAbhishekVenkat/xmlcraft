@@ -7,6 +7,7 @@ import { TreePane } from '../components/TreePane';
 import { XPathBar } from '../components/XPathBar';
 import { JsonConverter } from '../components/JsonConverter';
 import { XSLTModal } from '../components/XSLTModal';
+import { TosModal } from '../components/TosModal';
 import { useXmlStore } from '../store/useXmlStore';
 
 export default function Home() {
@@ -41,6 +42,7 @@ export default function Home() {
 
       {isJsonOpen && <JsonConverter onClose={() => setJsonOpen(false)} />}
       {isXsltOpen && <XSLTModal onClose={() => setXsltOpen(false)} />}
+      <TosModal />
     </div>
   );
 }
