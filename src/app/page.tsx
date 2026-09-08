@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 import { Header } from '../components/Header';
 import { Toolbar } from '../components/Toolbar';
 import { EditorPane } from '../components/EditorPane';
@@ -37,6 +39,8 @@ export default function Home() {
            <span>Built with 🤖 AI assistance (Google Antigravity)</span>
            <span className="text-zinc-700">|</span>
            <a href="https://github.com/KaviAbhishekVenkat/xmlcraft" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors underline decoration-blue-400/30">GitHub Repository</a>
+           <span className="text-zinc-700">|</span>
+           <Link href="/terms" className="text-blue-400 hover:text-blue-300 transition-colors underline decoration-blue-400/30">Terms of Service</Link>
         </div>
       </footer>
 
