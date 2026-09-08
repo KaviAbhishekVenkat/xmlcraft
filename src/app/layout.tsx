@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://xmlcraft.app'),
   title: 'XMLCraft | Zero-Egress XML Workbench & Data Studio',
   description: 'A 100% air-gapped, privacy-first XML Workbench and Data Studio for enterprise developers. Format, query (XPath), transform (XSLT), and mask sensitive XML payloads directly in your browser with zero network egress.',
   keywords: ['XML format', 'XML to JSON', 'XPath tester', 'XSLT sandbox', 'ISO 20022', 'enterprise XML', 'air-gapped XML tool', 'zero egress', 'PII masking'],
